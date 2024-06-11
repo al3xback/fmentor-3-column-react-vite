@@ -1,0 +1,63 @@
+.cars,
+.car {
+	display: flex;
+	flex-direction: column;
+}
+
+.cars {
+	width: 100%;
+	max-width: 32rem;
+	margin: 3rem 0 6rem;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.car {
+	align-items: flex-start;
+	gap: 2.5rem;
+	padding: 4.8rem;
+	background-color: #000;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.car--sedans {
+	background-color: #e38826;
+}
+
+.car--suvs {
+	background-color: #006970;
+}
+
+.car--luxury {
+	background-color: #004241;
+}
+
+.car img {
+	width: 6rem;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+.car h2 {
+	color: #f2f2f2;
+	text-transform: uppercase;
+}
+
+.car a {
+	margin-top: 0.6rem;
+}
+
+@media (min-width: 51.25em) {
+	.cars {
+		flex-direction: row;
+		max-width: 92rem;
+	}
+
+	.car {
+		flex: 1;
+	}
+
+	.car a {
+		margin-top: 5rem;
+	}
+}
