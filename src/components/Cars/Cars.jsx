@@ -9,10 +9,10 @@ export default function Cars() {
 					key={car.id}
 					className={`${styles.car} ${styles[`car--${car.id}`]}`}
 				>
-					<img src={car.icon} width={64} height={40} alt='' />
+					<img src={car.icon} width={64} height={40} alt="" />
 					<h2>{car.title}</h2>
 					<p>{car.description}</p>
-					<a href='#' className='btn btn--primary'>
+					<a href="#" className="btn btn--primary">
 						Learn More
 					</a>
 				</li>
